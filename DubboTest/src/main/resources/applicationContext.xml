@@ -8,12 +8,13 @@
        http://www.springframework.org/schema/context
        http://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
-    <dubbo:registry address="zookeeper://127.0.0.1:4180"/>
-    <dubbo:annotation/>
-
     <dubbo:application name="providers"/>
+    <bean id="testService" class="wencheng.TestServiceImpl" lazy-init="false"></bean>
 
 
-    <context:component-scan base-package="wencheng"/>
-    <context:annotation-config/>
+    <dubbo:registry address="zookeeper://127.0.0.1:4180"/>
+    <dubbo:service interface="wencheng.TestService" ref="testService"/>
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20880" />
+    <dubbo:annotation/>
 </beans>
