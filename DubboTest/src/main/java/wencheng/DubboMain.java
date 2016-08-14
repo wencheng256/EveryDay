@@ -1,6 +1,7 @@
 package wencheng;
 
-import org.springframework.context.ApplicationContext;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.io.IOException;
@@ -10,7 +11,10 @@ import java.io.IOException;
  */
 public class DubboMain {
 
+    public static Logger logger = LoggerFactory.getLogger(DubboMain.class);
+
     public static void main(String...args) throws IOException {
+        logger.info("hello world");
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
         System.out.println(1);
         context.start();

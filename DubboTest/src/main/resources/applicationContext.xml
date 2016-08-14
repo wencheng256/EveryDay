@@ -12,13 +12,18 @@
     <dubbo:application name="providers"/>
     <bean id="testService" class="wencheng.TestServiceImpl" lazy-init="false"></bean>
     <!--提供方和消费方都需要使用，在应用启动的时候只使用一次-->
-    <!--Dubbo缺省会在启动时检查依赖的服务是否可用，不可用时会抛出异常，阻止Spring初始化完成，以便上线时，能及早发现问题，默认check=true-->
+    <!--Dubbo缺省会在启动时检查依赖的服务是否可用，不可用时会抛出异常，阻止Spring初始化完成，以便上线时，能及早发现问题-->
     <!--register可以将register或者subscribe设为false 这样可以控制本应用只注册或者只消费-->
     <!--可以注册多个注册中心，对不同的服务使用不同的注册中心注册或者引用-->
     <dubbo:registry address="zookeeper://127.0.0.1:4180" check="true" subscribe="false"/>
     <!--注册dubbo服务使用的标签-->
     <!--可以使用version和group对同名服务进行区分-->
-    <dubbo:service interface="wencheng.TestService" ref="testService"/>
+    <dubbo:service interface="wencheng.TestService" ref="testService">
+        <!--指定service里面的方法可以对方法进行细粒度的控制-->
+        <!--async可以将方法改成异步调用的方法 方法会立即返回null 可以通过RpcContext获取future获取实际的返回结果-->
+        <!--onthrow onreturn oninvoke 三个回调相关的属性 可以指定监听器调用的方法-->
+        <dubbo:method name="speak" async="true"/>
+    </dubbo:service>
     <!-- 用dubbo协议在20880端口暴露服务  提供方提供，消费方被动使用-->
     <!--线程相关的是服务提供方需要管理的参数用于请求来的时候使用新开线程还是直接处理-->
     <!--一个provider可以使用多个protocol 只需要在注册的时候标明使用的是哪个端口进行注册即可 消费的时候不需要管理-->

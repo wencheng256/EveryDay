@@ -24,12 +24,14 @@
         <processorPath useClasspath="true" />
         <module name="DubboTest" />
         <module name="DubboTestClient" />
+        <module name="EhcacheTest" />
         <module name="LogBackTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="DubboTest" target="1.5" />
       <module name="DubboTestClient" target="1.5" />
+      <module name="EhcacheTest" target="1.5" />
       <module name="LogBackTest" target="1.5" />
     </bytecodeTargetLevel>
   </component>
