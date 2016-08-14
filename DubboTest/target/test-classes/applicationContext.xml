@@ -11,6 +11,6 @@
     <dubbo:application name="consumer"/>
 
     <dubbo:registry address="zookeeper://127.0.0.1:4180"/>
-    <dubbo:reference id="testService" interface="wencheng.TestService"/>
+    <!--<dubbo:reference id="testService" interface="wencheng.TestService"/>-->
     <dubbo:annotation/>
 </beans>

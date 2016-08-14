@@ -1,3 +1,4 @@
+import com.alibaba.dubbo.config.annotation.Reference;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,7 +13,7 @@ import wencheng.TestService;
 @ContextConfiguration(locations = "classpath:applicationContext.xml")
 public class DubboTest {
 
-    @Autowired
+    @Reference
     TestService testService;
 
     @Test

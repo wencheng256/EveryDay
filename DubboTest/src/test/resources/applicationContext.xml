@@ -9,8 +9,8 @@
        http://www.springframework.org/schema/context/spring-context.xsd http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <dubbo:application name="consumer"/>
-
-    <dubbo:registry address="zookeeper://127.0.0.1:4180"/>
-    <dubbo:reference id="testService" interface="wencheng.TestService"/>
+    <dubbo:registry address="zookeeper://127.0.0.1:4180" register="false"/>
+    <!--url参数是直连提供者，在本地测试阶段，可以绕过注册中心，直接连服务提供者（生产阶段不要使用）-->
+    <dubbo:reference id="testService" interface="wencheng.TestService" check="true" url="dubbo://localhost:20890"/>
     <dubbo:annotation/>
 </beans>
