@@ -19,6 +19,7 @@ public class DubboTest {
     @Test
     public void testDubbo(){
         System.out.println(testService.speak());
+        System.out.println("111");
     }
 
 }

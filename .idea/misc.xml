@@ -47,6 +47,7 @@
         <option value="$PROJECT_DIR$/LogBackTest/pom.xml" />
         <option value="$PROJECT_DIR$/DubboTest/pom.xml" />
         <option value="$PROJECT_DIR$/EhcacheTest/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaDocTest/pom.xml" />
       </list>
     </option>
   </component>
