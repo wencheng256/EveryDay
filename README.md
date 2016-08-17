@@ -1,1 +1,7 @@
-# EveryDay
+##这是我平时每日Java练习时做项目的汇总：
+####目录：
+```
+DubboTest——alibaba Dubbo框架的学习
+EhcacheTest——ehcache缓存框架学习
+LogBack——新一代日志框架LogBack学习
+```
