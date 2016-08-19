@@ -27,14 +27,16 @@
         <module name="EhcacheTest" />
         <module name="JavaDocTest" />
         <module name="LogBackTest" />
+        <module name="NIOTest" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DubboTest" target="1.5" />
+      <module name="DubboTest" target="1.7" />
       <module name="DubboTestClient" target="1.5" />
-      <module name="EhcacheTest" target="1.5" />
-      <module name="JavaDocTest" target="1.5" />
-      <module name="LogBackTest" target="1.5" />
+      <module name="EhcacheTest" target="1.7" />
+      <module name="JavaDocTest" target="1.7" />
+      <module name="LogBackTest" target="1.7" />
+      <module name="NIOTest" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>
