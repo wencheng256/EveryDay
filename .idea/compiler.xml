@@ -28,6 +28,7 @@
         <module name="JavaDocTest" />
         <module name="LogBackTest" />
         <module name="NIOTest" />
+        <module name="NIOTest1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -37,6 +38,7 @@
       <module name="JavaDocTest" target="1.7" />
       <module name="LogBackTest" target="1.7" />
       <module name="NIOTest" target="1.7" />
+      <module name="NIOTest1" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

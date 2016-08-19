@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/JavaDocTest/JavaDocTest.iml" filepath="$PROJECT_DIR$/JavaDocTest/JavaDocTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/LogBackTest/LogBackTest.iml" filepath="$PROJECT_DIR$/LogBackTest/LogBackTest.iml" />
       <module fileurl="file://$PROJECT_DIR$/NIOTest/NIOTest.iml" filepath="$PROJECT_DIR$/NIOTest/NIOTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NIOTest1/NIOTest1.iml" filepath="$PROJECT_DIR$/NIOTest1/NIOTest1.iml" />
     </modules>
   </component>
 </project>
