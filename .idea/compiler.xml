@@ -29,16 +29,18 @@
         <module name="LogBackTest" />
         <module name="NIOTest" />
         <module name="NIOTest1" />
+        <module name="StaticFactory" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="DubboTest" target="1.7" />
+      <module name="DubboTest" target="1.5" />
       <module name="DubboTestClient" target="1.5" />
-      <module name="EhcacheTest" target="1.7" />
-      <module name="JavaDocTest" target="1.7" />
-      <module name="LogBackTest" target="1.7" />
-      <module name="NIOTest" target="1.7" />
-      <module name="NIOTest1" target="1.7" />
+      <module name="EhcacheTest" target="1.5" />
+      <module name="JavaDocTest" target="1.5" />
+      <module name="LogBackTest" target="1.5" />
+      <module name="NIOTest" target="1.5" />
+      <module name="NIOTest1" target="1.5" />
+      <module name="StaticFactory" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

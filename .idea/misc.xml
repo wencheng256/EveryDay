@@ -50,6 +50,7 @@
         <option value="$PROJECT_DIR$/JavaDocTest/pom.xml" />
         <option value="$PROJECT_DIR$/NIOTest/pom.xml" />
         <option value="$PROJECT_DIR$/NIOTest1/pom.xml" />
+        <option value="$PROJECT_DIR$/StaticFactory/pom.xml" />
       </list>
     </option>
   </component>
