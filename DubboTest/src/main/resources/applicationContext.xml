@@ -13,7 +13,7 @@
     <bean id="testService" class="wencheng.TestServiceImpl" lazy-init="false"></bean>
     <!--提供方和消费方都需要使用，在应用启动的时候只使用一次-->
     <!--Dubbo缺省会在启动时检查依赖的服务是否可用，不可用时会抛出异常，阻止Spring初始化完成，以便上线时，能及早发现问题-->
-    <!--register可以将register或者subscribe设为false 这样可以控制本应用只注册或者只消费-->
+    <!--registry可以将register或者subscribe设为false 这样可以控制本应用只注册或者只消费-->
     <!--可以注册多个注册中心，对不同的服务使用不同的注册中心注册或者引用-->
     <dubbo:registry address="zookeeper://127.0.0.1:4180" check="true" subscribe="false"/>
     <!--注册dubbo服务使用的标签-->
